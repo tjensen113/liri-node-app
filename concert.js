@@ -1,8 +1,8 @@
 var axios = require('axios');
 var moment = require('moment')
-var keys = requre("./keys.js")
+var keys = require("./keys.js")
 
-function Concert(){
+function ConcertThis(){
     this.findshow = function(conSearch){
         axios.get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=bandsInTown ")
         .then (function(response){
@@ -17,10 +17,10 @@ function Concert(){
                 console.log(date);
                 console.log(conData.join(" "));
 
-            }
+            };
 
-        })
+        });
     }
 }
 
-module.exports = Concert;
+module.exports = ConcertThis;
