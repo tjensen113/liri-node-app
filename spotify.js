@@ -7,7 +7,17 @@ var spotify = new Spotify(keys.spotify);
 
 function spotifyThis(userInput){
     var song = userInput;
-
+    if(!song){
+        song = "the sign Ace of Base"
+    }
+    spotify.search({
+        type: "track",
+        query: "song"
+    },function(err, data){
+        if (err) {
+            return console.log("error:" + err);}
+    }
+        )
 }
 
 
