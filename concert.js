@@ -8,9 +8,19 @@ function Concert(){
         .then (function(response){
             for (var i=0;i<response.data.length;i++){
                 var date = moment(response.data[i].datetime).format("MM-DD-YYYY");
-                
+                var conData = [
+                    "venue: " + response.data[i].venue.name,
+                    "\nvenue location: " + response.data[i].venue.city + "," + response.data[i].venue.country,
+                    "\ndate: " + date,
+                    "\n---------------------------------------------"
+                ]
+                console.log(date);
+                console.log(conData.join(" "));
+
             }
 
-        }
+        })
     }
 }
+
+module.exports = Concert;
