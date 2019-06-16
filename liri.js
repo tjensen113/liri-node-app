@@ -8,7 +8,7 @@ var axios = require("axios");
 // how to reference the spotify keys with code line above
 
 var spotifyThis = require("./spotify.js");
-//var movieThis = require("./movies.js");
+var movieThis = require("./movies.js");
 var Concert = require("./concert.js");
 
 
@@ -26,9 +26,9 @@ switch (userCommand){
     case "spotify-this":
         spotifyThis(userInput);
         break;
-    // case "movie-this":
-    //    // movieThis(userInput);
-    //     break;
+    case "movie-this":
+       movieThis(userInput);
+        break;
         
     default:
         console.log("try concert-this, spotify-this, or movie-this!!!");    

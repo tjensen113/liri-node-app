@@ -11,7 +11,7 @@ function ConcertThis(userInput){
             for (var i=0;i<response.data.length;i++){
                 var date = moment(response.data[i].datetime).format("MM-DD-YYYY");
                 var conData = [
-                    "venue: " + response.data[i].venue.name,
+                    "venue: " + response.data[i].venue.city,
                     "\nvenue location: " + response.data[i].venue.city + "," + response.data[i].venue.country,
                     "\ndate: " + date,
                     "\n---------------------------------------------"
