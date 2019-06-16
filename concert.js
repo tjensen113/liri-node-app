@@ -1,10 +1,12 @@
+var keys = require("./keys.js")
+var fs = require("fs");
 var axios = require('axios');
 var moment = require('moment')
-var keys = require("./keys.js")
 
-function ConcertThis(){
+
+function ConcertThis(userInput){
     this.findshow = function(conSearch){
-        axios.get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=bandsInTown ")
+        axios.get ="https://rest.bandsintown.com/artists/" + artist + "/events?app_id=" +keys.bandsInTown.id
         .then (function(response){
             for (var i=0;i<response.data.length;i++){
                 var date = moment(response.data[i].datetime).format("MM-DD-YYYY");
@@ -17,7 +19,7 @@ function ConcertThis(){
                 console.log(date);
                 console.log(conData.join(" "));
 
-            };
+            }
 
         });
     }
