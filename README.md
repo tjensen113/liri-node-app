@@ -130,37 +130,6 @@ Edit the text in random.txt to test out the feature for movie-this and concert-t
 
 
 
-BONUS
-
-
-In addition to logging the data to your terminal/bash window, output the data to a .txt file called log.txt.
-
-
-Make sure you append each command you run to the log.txt file.
-
-
-Do not overwrite your file each time you run a command.
-
-
-
-Reminder: Submission on BCS
-
-Please submit the link to the Github Repository!
-
-
-
-Minimum Requirements
-Attempt to complete homework assignment as described in instructions. If unable to complete certain portions, please pseudocode these portions to describe what remains to be completed. Adding a README.md as well as adding this homework to your portfolio are required as well and more information can be found below.
-
-
-Create a README.md
-Add a README.md to your repository describing the project. Here are some resources for creating your README.md. Here are some resources to help you along the way:
-
-
-About READMEs
-
-
-Mastering Markdown
 
 
 
